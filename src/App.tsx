@@ -1,7 +1,21 @@
+import { Layout } from './app/components/Layout';
 import type { FunctionComponent, ReactElement } from 'react';
+import { Route, Routes } from 'react-router-dom';
 
 const App: FunctionComponent = (): ReactElement => {
-	return <h1>Simple Boiler Plate with tests and linting support</h1>;
+	return (
+		<Routes>
+			<Route
+				element={ <Layout /> }
+				path='/'
+			>
+				<Route
+					element={ <h1>the homepage</h1> }
+					index
+				/>
+			</Route>
+		</Routes>
+	);
 };
 
 export default App;

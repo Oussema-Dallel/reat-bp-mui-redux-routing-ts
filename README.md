@@ -1,6 +1,6 @@
 # React Application Boilerplate with linting support
 
-This template provides a minimal setup to get React working in Vite with HMR, an extensive list of ESLint rules and testing with `vitest`. The template is css agnostic, so feel free to choose whatever suits you best(keep in mind the related configuration changes and/or addtions).
+This template provides a minimal setup to get React working in Vite with HMR, an extensive list of ESLint rules and testing with `vitest`. The template embraces MUI as the styling library of choice, Redux as the state management library and React Router for routing. It is essentially an out of the box setup to start building complex applications.
 
 ## Expanding the ESLint configuration
 

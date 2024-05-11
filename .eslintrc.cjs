@@ -500,6 +500,7 @@ module.exports = {
         props: false
       }
     }],
-    'unicorn/prefer-ternary': [ 'off' ]
+    'unicorn/prefer-ternary': [ 'off' ],
+    'unicorn/prefer-spread': [ 'off' ],
   },
 }

@@ -1,9 +1,12 @@
 import App from './App';
-import { render } from './utils/testUtils';
+import { configureStore } from './app/store/store';
+import { renderWithProviders } from './utils/testUtils';
+import { storeSpy } from 'expect-redux';
 
 describe('<App />', () => {
 	it('should render', () => {
-		const { container } = render(<App />);
+		const store = configureStore([ storeSpy ], {});
+		const { container } = renderWithProviders(<App />, { store });
 
 		expect(container).toBeInTheDocument();
 	});
